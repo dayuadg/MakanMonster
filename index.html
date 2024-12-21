@@ -2,13 +2,47 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>PacMan</title>
+    <title>Makan Monster</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js" charset="utf-8"></script>
+     <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Menghilangkan scroll */
+        }
+
+        
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
   </head>
   <body>
     <div class="overlay-screen" id="start-screen">
-      <h1>PACMAN</h1>
+      <h1>Makan Monster</h1>
       <h2 id="start-msg">Press ENTER to start</h2>
       <h2>Use arrow keys to move</h2>
     </div>
