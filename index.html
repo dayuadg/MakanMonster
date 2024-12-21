@@ -2,22 +2,26 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Makan Monster</title>
+    <title>Makan Monster - Home</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css" />
-    <script src="app.js" charset="utf-8"></script>
     <style>
         body, html {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
-            overflow: hidden; /* Menghilangkan scroll */
             font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         /* Header Styling */
         header {
+            width: 100%;
             background-color: #333;
             color: white;
             padding: 10px 0;
@@ -43,44 +47,39 @@
             background-color: #555;
         }
 
-        /* Overlay Screens */
-        .overlay-screen {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            font-size: 24px;
-            display: none;
-        }
-
-        /* Game Container */
-        .game-container {
-            display: none;
+        /* Main Content Styling */
+        .container {
             text-align: center;
+            margin-top: 50px;
         }
 
-        .grid {
-            width: 100%;
-            height: 400px;
-            background-color: #f3f3f3;
-            border: 2px solid #333;
-            margin: 20px 0;
+        .pacman-image {
+            width: 300px;
+            height: 300px;
+            background-image: url('PacmanImage.PNG');
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 20px;
         }
 
-        #score {
-            font-size: 32px;
-            color: green;
+        .play-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
+
+        .play-button:hover {
+            background-color: #555;
+        }
+
     </style>
   </head>
   <body>
+
     <!-- Header -->
     <header>
       <nav>
@@ -92,28 +91,14 @@
       </nav>
     </header>
 
-    <!-- Overlay Screen (Start) -->
-    <div class="overlay-screen" id="start-screen">
-      <h1>Makan Monster</h1>
-      <h2 id="start-msg">Press ENTER to start</h2>
-      <h2>Use arrow keys to move</h2>
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Gambar Pacman -->
+      <div class="pacman-image"></div>
+
+      <!-- Tombol Play -->
+      <a href="game.html" class="play-button">Play</a>
     </div>
 
-    <!-- Game Container -->
-    <div class="game-container">
-      <div class="grid"></div>
-      <h2>Score: <span id="score">0</span></h2>
-    </div>
-
-    <!-- Overlay Screen (Game Over) -->
-    <div class="overlay-screen" id="game-over-screen">
-      <span>GAME OVER!</span>
-    </div>
-
-    <!-- Overlay Screen (You Won) -->
-    <div class="overlay-screen" id="you-won-screen">
-      <span>YOU WON!</span>
-    </div>
-    
   </body>
 </html>
