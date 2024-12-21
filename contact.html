@@ -4,7 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontak - MakanMonster</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles for the contact page */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin: 40px 20px;
+        }
+
+        .contact-methods {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .whatsapp-button {
+            background-color: #25d366;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-button img {
+            margin-right: 10px;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128c7e;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .contact-form h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-form p {
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
 
@@ -21,37 +157,35 @@
 </header>
 
 <main>
-    <section class="contact">
+    <section class="contact-container">
         <h1>Kontak Kami</h1>
-        <p>Jika Anda memiliki pertanyaan atau ingin menghubungi kami, Anda bisa langsung mengirim pesan melalui WhatsApp. Silakan klik tombol di bawah untuk menghubungi kami langsung di WhatsApp.</p>
+        <p>Jika Anda memiliki pertanyaan atau ingin menghubungi kami, Anda dapat menggunakan WhatsApp atau formulir di bawah ini.</p>
 
-        <h2>Hubungi Kami via WhatsApp</h2>
-        <p>Anda dapat mengirim pesan langsung ke nomor kami:</p>
-        <ul>
-            <li><strong>Nomor WhatsApp:</strong> +62 21 9876 5432</li>
-        </ul>
+        <div class="contact-methods">
+            <!-- WhatsApp Contact Button -->
+            <a href="https://wa.me/6282198765432" class="whatsapp-button" target="_blank">
+                <img src="whatsapp-icon.png" alt="WhatsApp Icon" width="40" height="40">
+                Chat via WhatsApp
+            </a>
 
-        <!-- WhatsApp Contact Button -->
-        <a href="https://wa.me/6282198765432" class="whatsapp-button" target="_blank">
-            <img src="whatsapp-icon.png" alt="WhatsApp Icon" width="40" height="40">
-            Chat via WhatsApp
-        </a>
+            <div class="contact-form">
+                <h2>Formulir Kontak</h2>
+                <p>Isi formulir berikut jika Anda lebih memilih menghubungi kami melalui pesan.</p>
 
-        <h2>Formulir Kontak</h2>
-        <p>Atau Anda juga dapat mengirimkan pesan melalui formulir kontak di bawah ini:</p>
-        
-        <form action="send_message.php" method="POST">
-            <label for="name">Nama:</label>
-            <input type="text" id="name" name="name" required>
+                <form action="send_message.php" method="POST">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-            <label for="message">Pesan:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit">Kirim Pesan</button>
-        </form>
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
     </section>
 </main>
 
