@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - MakanMonster</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="about-us">
+        <h1>Tentang MakanMonster</h1>
+        <p>Selamat datang di <strong>MakanMonster</strong>, situs game HTML5 yang menyajikan berbagai macam permainan seru dan menarik untuk pengunjung dari segala usia. Kami hadir untuk memberikan hiburan berkualitas dengan permainan yang mudah dimainkan di berbagai perangkat, tanpa perlu mengunduh aplikasi tambahan.</p>
+
+        <h2>Visi Kami</h2>
+        <p>Visi kami adalah untuk menjadi destinasi utama bagi para penggemar game online yang mencari permainan seru dan bervariasi. Kami berkomitmen untuk menyediakan pengalaman bermain game yang menyenangkan dan bebas hambatan bagi setiap pemain, dengan permainan HTML5 yang dapat dimainkan langsung di browser.</p>
+
+        <h2>Misi Kami</h2>
+        <p>Misi kami adalah menghadirkan koleksi permainan terbaik yang dapat diakses dengan mudah, serta terus mengembangkan dan menambah variasi permainan untuk memenuhi kebutuhan hiburan pengunjung. Kami percaya bahwa hiburan yang berkualitas dapat memberikan pengalaman yang menyenangkan, mengasyikkan, dan mendidik bagi pemain dari segala usia.</p>
+
+        <h2>Sejarah Kami</h2>
+        <p><strong>MakanMonster</strong> didirikan dengan tujuan untuk menciptakan situs yang menyatukan komunitas penggemar game HTML5 di Indonesia dan dunia. Kami mulai dengan koleksi permainan sederhana dan terus berkembang seiring berjalannya waktu. Kami bekerja sama dengan pengembang game terkemuka untuk memberikan permainan yang inovatif dan seru setiap bulan.</p>
+
+        <h2>Kenapa Memilih MakanMonster?</h2>
+        <p>Dengan berbagai permainan yang tidak memerlukan perangkat keras khusus dan dapat dimainkan langsung di browser, <strong>MakanMonster</strong> memberikan pengalaman bermain yang menyenangkan tanpa batasan. Berikut beberapa alasan mengapa Anda harus bermain di situs kami:</p>
+        <ul>
+            <li><strong>Permainan HTML5:</strong> Kami menawarkan permainan berkualitas tinggi yang dapat dimainkan langsung di browser tanpa perlu unduhan.</li>
+            <li><strong>Variasi Permainan:</strong> Kami memiliki berbagai jenis permainan, dari permainan petualangan, puzzle, aksi, hingga game edukatif untuk semua usia.</li>
+            <li><strong>Akses Mudah:</strong> Cukup buka situs kami di perangkat apa saja, baik itu komputer desktop, tablet, atau smartphone.</li>
+            <li><strong>Gratis:</strong> Semua permainan di MakanMonster dapat dimainkan secara gratis, tanpa biaya tersembunyi.</li>
+        </ul>
+
+        <h2>Tim Kami</h2>
+        <p>Tim di balik <strong>MakanMonster</strong> terdiri dari para penggemar game dan profesional yang berdedikasi untuk memberikan pengalaman bermain terbaik bagi para pemain. Kami terus bekerja keras untuk menambah koleksi game baru dan menjaga situs kami tetap menyenangkan dan bebas dari gangguan teknis.</p>
+
+        <h2>Layanan Kami</h2>
+        <p>Kami menawarkan berbagai permainan HTML5 yang dapat dimainkan langsung dari browser Anda. Kami juga memberikan update rutin dengan permainan baru untuk memastikan Anda tidak pernah kehabisan pilihan. Selain itu, kami mendengarkan umpan balik dari komunitas kami untuk terus meningkatkan pengalaman bermain di MakanMonster.</p>
+
+        <h2>Kontak Kami</h2>
+        <p>Jika Anda memiliki pertanyaan, saran, atau ingin berbagi pengalaman bermain di MakanMonster, Anda dapat menghubungi kami melalui:</p>
+        <ul>
+            <li><strong>Email:</strong> support@makanmonster.biz.id</li>
+            <li><strong>Telepon:</strong> +62 21 9876 5432</li>
+            <li><strong>Alamat:</strong> Jl. Game No. 5, Jakarta, Indonesia</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 MakanMonster. Semua Hak Dilindungi.</p>
+</footer>
+
+</body>
+</html>
