@@ -17,7 +17,6 @@ body {
   align-items: center;
 }
 /* Header Styles */
-/* Header Styles */
 header {
   background-color: #333;
   color: white;
@@ -29,18 +28,23 @@ header {
 
 header h1 {
   margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  display: flex; /* Make the navigation container a flexbox */
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  gap: 20px;
+  display: flex; /* Display the list items horizontally */
+  gap: 20px; /* Space between items */
 }
 
 nav ul li {
-  display: inline-block;
+  display: inline-block; /* Ensure each list item is inline */
 }
 
 nav ul li a {
@@ -52,6 +56,7 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: underline;
 }
+
 
 
 
