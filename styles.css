@@ -15,100 +15,79 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
 }
 
-/* Header Styling */
-header {
-  width: 100%;
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-}
-
-header nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-header nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 8px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-header nav a:hover {
-  background-color: #555;
-}
-
-/* Game Container Styling */
 .game-container {
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  margin-top: 100px; /* Untuk memberi jarak dari header */
-  height: 100vh;
 }
 
-/* Styling untuk Canvas */
-#gameCanvas {
+.grid {
+  display: flex;
+  flex-wrap: wrap;
   width: 560px;
   height: 560px;
-  background-color: black;
-  border: 2px solid #333;
+  border: 0.2px solid rgb(1, 17, 17);
 }
 
-/* Overlay Screen Styling */
-.overlay-screen {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: none;
+.grid div {
+  width: 20px;
+  height: 20px;
 }
 
-#start-screen h1 {
-  color: yellow;
-  font-size: 4rem;
-  margin-bottom: 40px;
-  animation: colours 1s infinite;
+.power-pellet {
+  background-color: rgb(14, 233, 14);
+  border: solid black 4px;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
-#start-screen h2 {
-  margin: 20px 0px;
-  animation: blink 0.8s infinite;
+.pac-dot {
+  background-color: yellow;
+  border: solid black 7px;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
-#game-over-screen,
-#you-won-screen {
-  font-size: 6rem;
-  animation: blink 0.8s infinite;
-  display: none;
+.blinky {
+  background-color: red;
 }
 
-#game-over-screen {
-  color: red;
+.stinky {
+  background-color: rgb(221, 18, 130);
 }
 
-#you-won-screen {
-  color: #0bf117;
+.inky {
+  background-color: rgb(15, 214, 204);
 }
 
-/* Styling untuk Score */
+.clyde {
+  background-color: rgb(243, 125, 78);
+}
+
+.ghost {
+  border: 0px;
+  border-radius: 0px;
+}
+
+.scared-ghost {
+  background-color: purple;
+  border: 0px;
+  border-radius: 0px;
+}
+
+.wall {
+  background-color: rgb(8, 14, 102);
+}
+
+.pac-man {
+  background-color: rgb(247, 232, 22);
+  border-radius: 10px;
+}
 h2 {
   color: white;
   font-weight: normal;
@@ -127,7 +106,54 @@ h2 {
   color: red;
 }
 
-/* Animations */
+#start-screen {
+  background-color: black;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+}
+
+#start-screen h1 {
+  color: yellow;
+  font-size: 4rem;
+  margin-top: 40vh;
+  margin-bottom: 40px;
+  animation: colours 1s infinite;
+}
+
+#start-msg {
+  animation: blink 0.8s infinite;
+}
+
+#start-screen h2 {
+  margin: 20px 0px;
+}
+
+#game-over-screen {
+  align-items: center;
+  color: red;
+  font-size: 6rem;
+  justify-content: center;
+  animation: blink 0.8s infinite;
+  display: none;
+}
+
+#you-won-screen {
+  align-items: center;
+  color: #0bf117;
+  font-size: 6rem;
+  justify-content: center;
+  animation: blink 0.8s infinite;
+  display: none;
+}
+
+.overlay-screen {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
 @keyframes colours {
   0% {
     color: yellow;
