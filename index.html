@@ -2,84 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Makan Monster - Home</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Header Styling */
-        header {
-            width: 100%;
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        header nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        header nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            padding: 8px;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-        }
-
-        header nav a:hover {
-            background-color: #555;
-        }
-
-        /* Main Content Styling */
-        .container {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .pacman-image {
-            width: 300px;
-            height: 300px;
-            background-image: url('PacmanImage.PNG');
-            background-size: cover;
-            background-position: center;
-            margin-bottom: 20px;
-        }
-
-        .play-button {
-            padding: 15px 30px;
-            font-size: 18px;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .play-button:hover {
-            background-color: #555;
-        }
-
-    </style>
+    <title>Makan Monster</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" charset="utf-8"></script>
   </head>
   <body>
-
     <!-- Header -->
     <header>
       <nav>
@@ -91,14 +18,27 @@
       </nav>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-      <!-- Gambar Pacman -->
-      <div class="pacman-image"></div>
-
-      <!-- Tombol Play -->
-      <a href="game.html" class="play-button">Play</a>
+    <!-- Game Start Screen -->
+    <div class="overlay-screen" id="start-screen">
+      <h1>PACMAN</h1>
+      <h2 id="start-msg">Press ENTER to start</h2>
+      <h2>Use arrow keys to move</h2>
     </div>
 
+    <!-- Game Container -->
+    <div class="game-container">
+      <div class="grid"></div>
+      <h2>Score: <span id="score">0</span></h2>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div class="overlay-screen" id="game-over-screen">
+      <span>GAME OVER!</span>
+    </div>
+
+    <!-- You Won Screen -->
+    <div class="overlay-screen" id="you-won-screen">
+      <span>YOU WON!</span>
+    </div>
   </body>
 </html>
